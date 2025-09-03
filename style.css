@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#board {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  background: #008000;
+}
+
+.cell {
+  border: 1px solid #000;
+  position: relative;
+}
+
+.disc {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.disc.black {
+  background: url('assets/black.svg') center/cover no-repeat;
+}
+
+.disc.white {
+  background: url('assets/white.svg') center/cover no-repeat;
+}
